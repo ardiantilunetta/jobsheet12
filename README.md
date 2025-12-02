@@ -24,3 +24,7 @@ PERCOBAAN 3
 
 PERCOBAAN 4
 1. karena String... adalah Varargs (variable arguments), yaitu parameter yang bisa menerima banyak nilai sekaligus, tanpa harus ditulis sebagai array
+2.
+3. Dalam 1 fungsi hanya boleh menggunakan 1 tipe data varargs, tetapi boleh menggunakan lebih dari 1 tipe data untuk variabel lain yang bukan berbentuk varargs. contoh : 
+static void daftarPengunjung(int angka, String menu, String...namaPengunjung) -> varargs diletakkan di paling belakang
+4. Program tetap berjalan, output yang dihasilkan hanya "Daftar Nama Pengunjung :" karena dipanggil tanpa argumen, jadi varargs tidak ada isinya

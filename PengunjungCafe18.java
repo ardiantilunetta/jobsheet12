@@ -3,6 +3,7 @@ public class PengunjungCafe18 {
         daftarPengunjung("Ali", "Budi", "Citra");
         daftarPengunjung("Andi");
         daftarPengunjung("Doni", "Eti", "Fahmi", "Galih");
+        daftarPengunjung();
     }
 
     static void daftarPengunjung(String...namaPengunjung) {
