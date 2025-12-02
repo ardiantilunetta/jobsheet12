@@ -9,6 +9,7 @@ public class NilaiMahasiswa18 {
         int[] nilai = new int[n];
         isianArray(n, nilai);
         tampilArray(nilai);
+        hitTot(nilai);
     }
 
     public static void isianArray (int jumlah, int[] nilai) {
@@ -24,5 +25,14 @@ public class NilaiMahasiswa18 {
         for (int i = 0 ; i < nilai.length ; i++) {
             System.out.print(nilai[i]+", ");
         }
+        System.out.println();
+    }
+
+    public static int hitTot (int[] nilai) {
+        int total = 0;
+        for (int i = 0 ; i < nilai.length ; i++) {
+            total += nilai[i];
+        }
+        return total;
     }
 }
