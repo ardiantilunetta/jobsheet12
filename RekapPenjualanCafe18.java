@@ -8,6 +8,7 @@ public class RekapPenjualanCafe18 {
         isiArray(rekap, menu);
         tampilArray(rekap, menu);
         tertinggi(rekap, menu);
+        rata(rekap, menu);
     }
 
     public static void isiArray(int rekap[][], String menu[]) {
@@ -50,6 +51,19 @@ public class RekapPenjualanCafe18 {
         }
         System.out.println("----- PENJUALAN TERTINGGI -----");
         System.out.println(nama+penjualan);
+        System.out.println();
+    }
+
+    public static void rata (int rekap[][], String menu[]) {
+        System.out.println("----- RATA RATA PENJUALAN -----");
+        for (int i = 0 ; i < rekap.length ; i++) {
+            int rata = 0;
+            System.out.print(menu[i]+"\t");
+            for (int j = 0 ; j < rekap[i].length ; j++) {
+                rata += rekap[i][j];
+            }
+            System.out.println(rata/rekap[i].length);
+        }
     }
     
 }
