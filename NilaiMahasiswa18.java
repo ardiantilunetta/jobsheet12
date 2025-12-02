@@ -8,6 +8,7 @@ public class NilaiMahasiswa18 {
         int n = sc.nextInt();
         int[] nilai = new int[n];
         isianArray(n, nilai);
+        tampilArray(nilai);
     }
 
     public static void isianArray (int jumlah, int[] nilai) {
@@ -15,6 +16,13 @@ public class NilaiMahasiswa18 {
         for (int i = 0 ; i < jumlah ; i++) {
             System.out.print("Masukkan nilai mahasiswa "+(i+1)+" : ");
             nilai[i] = sc.nextInt();
+        }
+    }
+
+    public static void tampilArray (int[] nilai) {
+        System.out.print("Nilai mahasiswa : ");
+        for (int i = 0 ; i < nilai.length ; i++) {
+            System.out.print(nilai[i]+", ");
         }
     }
 }
