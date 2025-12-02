@@ -17,3 +17,7 @@ isMember digunakan untuk mengontrol apakah pesan diskon muncul atau tidak
 6. 
 7. 
 8. Ya. dengan parameter, fungsi bisa menampilkan menu untuk siapa saja, bukan hanya satu nama tertentu, dan bisa menyesuaikan apakah pelanggan adalah member atau bukan tanpa harus mengubah isi kode di dalam fungsi
+
+PERCOBAAN 3
+1. Suatu fungsi membutuhkan nilai kembalian (return value) ketika fungsi tersebut harus menghasilkan suatu data untuk digunakan kembali oleh bagian program lainnya. Contohmya pada fungsi hitungTotalHarga, karena fungsi tersebut menghasilkan output hargaTotal berupa int yang akan digunakan kembali/dikeluarkan pada fungsi(main).
+2. sebuah fungsi tidak perlu mengembalikan nilai ketika tugasnya hanya melakukan aksi. Contohnya pada fungsi Menu() karena isinya hanya menampilkan teks saja
