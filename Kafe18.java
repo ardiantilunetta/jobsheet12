@@ -1,7 +1,7 @@
 public class Kafe18 {
 
     public static void main(String[] args) {
-        Menu("Andi", true);
+        Menu("Budi", true, "DISKON30");
     }
 
     public static void Menu(String namaPelanggan, boolean isMember, String kodePromo) {
