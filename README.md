@@ -14,3 +14,6 @@ PERCOBAAN 2
 4. Jika isMember == true, program menampilkan pesan : "Anda adalah member, dapatkan diskon 10% untuk setiap pembelian!". Jika isMember == false, bagian itu tidak ditampilkan, jadi pelanggan dianggap bukan member.
 isMember digunakan untuk mengontrol apakah pesan diskon muncul atau tidak
 5. Program akan eror
+6. 
+7. 
+8. Ya. dengan parameter, fungsi bisa menampilkan menu untuk siapa saja, bukan hanya satu nama tertentu, dan bisa menyesuaikan apakah pelanggan adalah member atau bukan tanpa harus mengubah isi kode di dalam fungsi
