@@ -4,11 +4,19 @@ public class Kafe18 {
         Menu("Andi", true);
     }
 
-    public static void Menu(String namaPelanggan, boolean isMember) {
+    public static void Menu(String namaPelanggan, boolean isMember, String kodePromo) {
         System.out.println("Selamat datang, "+namaPelanggan+"!");
 
         if (isMember) {
             System.out.println("Anda adalah member, dapatkan diskon 10% untuk setiap pembelian!");
+        }
+
+        if (kodePromo == "DISKON30") {
+            System.out.println("Mendapatkan diskon 30%");
+        } else if (kodePromo == "DISKON50") {
+            System.out.println("Mendapatkan diskon 50%");
+        } else {
+            System.out.println("Kode invalid!");
         }
 
         System.out.println("===== MENU RESTO KAFE =====");
