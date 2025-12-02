@@ -21,3 +21,6 @@ isMember digunakan untuk mengontrol apakah pesan diskon muncul atau tidak
 PERCOBAAN 3
 1. Suatu fungsi membutuhkan nilai kembalian (return value) ketika fungsi tersebut harus menghasilkan suatu data untuk digunakan kembali oleh bagian program lainnya. Contohmya pada fungsi hitungTotalHarga, karena fungsi tersebut menghasilkan output hargaTotal berupa int yang akan digunakan kembali/dikeluarkan pada fungsi(main).
 2. sebuah fungsi tidak perlu mengembalikan nilai ketika tugasnya hanya melakukan aksi. Contohnya pada fungsi Menu() karena isinya hanya menampilkan teks saja
+
+PERCOBAAN 4
+1. karena String... adalah Varargs (variable arguments), yaitu parameter yang bisa menerima banyak nilai sekaligus, tanpa harus ditulis sebagai array
