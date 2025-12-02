@@ -12,7 +12,7 @@ public class RekapPenjualanCafe18 {
         int[][] rekap = new int[jumlahMenu][jumlahHari];
         isiArray(rekap, menu);
         tampilArray(rekap, menu, jumlahHari);
-        tertinggi(rekap, menu);
+        tertinggi(rekap, menu, jumlahHari);
         rata(rekap, menu);
     }
 
@@ -49,21 +49,23 @@ public class RekapPenjualanCafe18 {
         System.out.println();
     }
 
-    public static void tertinggi (int rekap[][], String menu[]) {
+    public static void tertinggi (int rekap[][], String menu[], int hari) {
         int tertinggi = 0;
         String nama = null;
-        int penjualan = 0;
+        
         for (int i = 0 ; i < rekap.length ; i++) {
+            int total = 0;
             for (int j = 0 ; j < rekap[i].length ; j++) {
-                if (rekap[i][j] > tertinggi) {
-                    tertinggi = rekap[i][j];
-                    nama = menu[i];
-                    penjualan = rekap[i][j];
-                }
+                total += rekap[i][j];
+            }
+            if (total > tertinggi) {
+                tertinggi = total;
+                nama = menu[i];
             }
         }
+
         System.out.println("----- PENJUALAN TERTINGGI -----");
-        System.out.println(nama+"\t"+penjualan);
+        System.out.println(nama+"\t"+tertinggi);
         System.out.println();
     }
 
