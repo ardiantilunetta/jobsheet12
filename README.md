@@ -28,3 +28,15 @@ PERCOBAAN 4
 3. Dalam 1 fungsi hanya boleh menggunakan 1 tipe data varargs, tetapi boleh menggunakan lebih dari 1 tipe data untuk variabel lain yang bukan berbentuk varargs. contoh : 
 static void daftarPengunjung(int angka, String menu, String...namaPengunjung) -> varargs diletakkan di paling belakang
 4. Program tetap berjalan, output yang dihasilkan hanya "Daftar Nama Pengunjung :" karena dipanggil tanpa argumen, jadi varargs tidak ada isinya
+
+PERCOBAAN 5
+1. Saat program berjalan, eksekusi dimulai dari main(), lalu program meminta input panjang, lebar, dan tinggi, yang masing-masing disimpan ke variabel p, l, dan t. Setelah itu, program memanggil hitungLuas(p, l) untuk menghitung luas persegi panjang dan menampilkan hasilnya. Selanjutnya, program memanggil hitungVolume(t, p, l), yang di dalamnya kembali memanggil hitungLuas(a, b) untuk mendapatkan luas alas sebelum dikalikan dengan tinggi. Hasil volume kemudian dikirim kembali ke main() dan ditampilkan. Setelah semuanya selesai, program menutup Scanner dan berhenti
+2. Output :
+"Luas persegi panjang adalah 12
+Volume balok adalah 60"
+Saat program dijalankan, pengguna memasukkan panjang, lebar, dan tinggi. Nilai 4 dan 3 dikirim ke hitungLuas(p, l) dan menghasilkan luas 12, lalu ditampilkan. Setelah itu, hitungVolume(t, p, l) dijalankan, fungsi ini kembali memanggil hitungLuas(p, l) untuk mendapatkan luas alas 12, kemudian mengalikannya dengan tinggi 5 sehingga volume menjadi 60. Nilai tersebut dikembalikan ke main() dan ditampilkan, sehingga output akhirnya adalah luas 12 dan volume 60
+3. Ketika program dijalankan, pertama-tama main memanggil fungsi Jumlah(1, 1) yang menghasilkan nilai 2 dan menyimpannya ke variabel temp. Nilai ini kemudian dikirim ke fungsi TampilJumlah(temp, 5). Di dalam fungsi tersebut, program kembali memanggil Jumlah(bil1, bil2) yaitu Jumlah(2, 5) yang menghasilkan nilai 7. Nilai 7 inilah yang dikirim ke fungsi TampilHinggaKei(7), sehingga program mencetak angka 1 hingga 7 secara berurutan ke layar
+4. Fungsi perlu parameter ketika fungsi tersebut membutuhkan data dari luar untuk menjalankan perintah di dalam fungsi tersebut.
+Fungsi perlu parameter ketika fungsi tersebut membutuhkan data dari luar untuk melakukan tugasnya.
+5. Pada Percobaan 5, hitungLuas(p, l) dan hitungVolume(t, p, l) memakai parameter karena perhitungan luas dan volume membutuhkan panjang, lebar, dan tinggi yang diberikan dari main().boleh tanpa parameter jika semua data yang dibutuhkan sudah tersedia di dalam fungsi itu sendiri atau tidak membutuhkan masukan dari luar. Misalnya, fungsi yang hanya menampilkan teks.
+6. Di Percobaan 5, hitungLuas() mengembalikan luas yang dipakai oleh main() dan juga dipakai lagi oleh hitungVolume(). Begitu juga hitungVolume() mengembalikan volume agar bisa ditampilkan. tidak perlu return jika tujuannya hanya melakukan aksi tanpa menghasilkan nilai yang perlu digunakan kembali. Contohnya fungsi main() tidak memiliki return value karena hanya menjalankan alur program, membaca input, memanggil fungsi lain, dan menampilkan hasil.
