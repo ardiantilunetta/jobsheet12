@@ -10,6 +10,7 @@ public class NilaiMahasiswa18 {
         isianArray(n, nilai);
         tampilArray(nilai);
         hitTot(nilai);
+        System.out.println("Total Nilai Mahasiswa = "+hitTot(nilai));
     }
 
     public static void isianArray (int jumlah, int[] nilai) {
